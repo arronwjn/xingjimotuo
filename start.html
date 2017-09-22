@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="./reset.css">
+<script language="JavaScript"> if (document.all) { window.resizeTo(screen.availWidth,screen.availHeight); } </script>
+<script type="text/javascript">
+    !function(a){function b(){var b=a.document,c=b.documentElement,d=c.getBoundingClientRect().width;document.documentElement.style.fontSize=20*(d/360)+"px"}window.addEventListener("DOMContentLoaded",function(){b()},!1),window.addEventListener("resize",function(){b()}),b()}(window);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<style>
+    body,html{
+        width: 100%;
+        height: 100%;
+        font-size:20px;
+    }
+    #app{
+        width: 100%;
+        height: 100%;
+    }
+    .cantainer{
+        width: 100%;
+        height: 100%;
+        background: url('./images/start.jpg') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        position: relative;
+    }
+    .rule_icon{
+        position: absolute;
+        top:1.1rem;
+        right:0.775rem;
+        width:1.3rem;
+        height:1.35rem;
+        padding:0.5rem;
+        cursor: pointer;
+    }
+    .start_button{
+        position: absolute;
+        bottom:5.2rem;
+        left:4.375rem;
+        width: 9.75rem;
+        height: 3.2rem;
+        cursor:pointer;
+    }
+    /*规则页样式*/
+    .rule{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url('./images/rule_bg.jpg') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        transition: all 0.1s linear;
+        transform: translate3d(0,0,0);
+    }
+    .rule_back{
+        position: absolute;
+        top:0.825rem;
+        left:1.05rem;
+        width:1.25rem;
+        height:1.25rem;
+        padding: 0.5rem;
+    }
+    .rule_title{
+        position: absolute;
+        top:1.5rem;
+        right:6.075rem;
+        width: 5.6rem;
+        height: 1.225rem;
+    }
+    .rule_text{
+        position: absolute;
+        bottom:11.625rem;
+        left:2.8rem;
+        width: 12.875rem;
+        font-size:0.55rem;
+        color:#fff;
+    }
+    .rule_text p{
+        line-height:0.825rem;
+    }
+    .move-enter-active{
+         transform: translate3d(100%,0,0);
+     }
+    .move-leave-active{
+         transform: translate3d(100%,0,0);
+     }
+    .answer_logo{
+        width: 2.45rem;
+        height:2.4rem;
+        position: absolute;
+        top:0.9rem;
+        left:0.75rem;
+    }
+    .fuyun{
+        position: absolute;
+        left:0;
+        bottom:0;
+        width: 100%;
+        height: 4.325rem;
+    }
+</style>
+<body>
+    <div id="app">
+        <div class="cantainer" v-if="!btn">
+            <img src="./images/rule.png" alt="" class="rule_icon" @click="see_rule()">
+            <img src="./images/answer_logo.png" alt="" class="answer_logo">
+            <img src="./images/start_button.png" alt="" class="start_button" @click="jumpGame()">
+            <img src="./images/fuyun.png" alt="" class="fuyun">
+        </div>
+        <transition name="move">
+            <div class="rule" v-if="btn">
+                <img src="./images/rule_back.png" alt="" class="rule_back" @click="back()">
+                <img src="./images/rule_title.png" alt="" class="rule_title">
+                <div class="rule_text">
+                    <p>1.游戏开始后，装载机开始向左滑动。玩家通过点击屏幕，改变装载机方向。</p>
+                    <p>2.控制装载机方向，朝前方道路驶去。每过一个弯道，即获得1分。</p>
+                    <p>3.在道路上吃到发动机，可额外增加2分。</p>
+                    <p>4.装载机后方的道路，会不断掉落。如玩家掉落出道路，本次游戏即结束，展示自身所得分数。在主持人公布的总时间内，可重复继续挑战。</p>
+                    <p>5.获得分数排在前10位的玩家，其进度会始终展现在大屏幕上，在主持人宣布游戏正式结束后，会生成前10位的玩家排行榜，相应的玩家即可登台领奖。</p>
+                </div>
+            </div>
+        </transition>
+    </div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/vue-resource.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                btn:false
+            };
+        },
+        created(){
+            var url=window.common.GetRequest(window.location.search)
+            var openid=url.openid
+            var times=url.times
+            window.common.setStorage('user_Id',openid)
+            window.common.setStorage('times',times)
+
+            setInterval(function(){
+                window.http.post('index/index/getstatus',{},function(res){
+                    console.log('getstatus',res)
+                    window.http.post('index/index/gameControll',{
+                        status:res.body.status
+                    },function(res){
+                        console.log(res,'gameControll')
+                    })
+                })
+            },500)
+
+        },
+        mounted(){
+        },
+        methods:{
+            jumpGame(){
+                window.location.href='./index.html'
+            },
+            see_rule(){
+                var that=this
+                that.btn=true
+            },
+            back(){
+                this.btn=false
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,99 @@
+body,html{
+    width: 100%;
+}
+.cantain{
+    margin:0 auto;
+    /*padding:20px;*/
+}
+td{
+    display:block;
+    margin-bottom:40px;
+}
+.title{
+    font-size:24px;
+}
+.select{
+    /*display:flex;*/
+    font-size:24px;
+}
+.select input{
+    width: 24px;
+    height: 24px;
+    /*margin-left:44px;*/
+}
+.answer_bottom{
+    /*position: fixed;*/
+    /*left:35%;*/
+    /*bottom:216px;*/
+    display: flex;
+    justify-content: space-around;
+}
+.submit{
+    /*position:fixed;*/
+    /*bottom:216px;*/
+    /*left:35%;*/
+    width: 300px;
+    height: 50px;
+    background-color: #f1c647;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:20px;
+}
+.submit1{
+    /*position:fixed;*/
+    /*bottom:216px;*/
+    /*left:80px;*/
+    width: 300px;
+    height: 50px;
+    background-color: #f1c647;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:20px;
+}
+.submit2{
+    /*position:fixed;*/
+    /*bottom:216px;*/
+    /*right:80px;*/
+    width: 300px;
+    height: 50px;
+    background-color: #f1c647;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:20px;
+}
+.prize{
+    /*position:fixed;*/
+    /*bottom:216px;*/
+    /*left:35%;*/
+    width: 300px;
+    height: 50px;
+    background-color: #f1c647;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:20px;
+}
+.prize1{
+    background-color: #ccc;
+}
+#table{
+    margin-top:20px;
+}
+th{
+    display:inline-block;
+    width:100%;
+    text-align:left;
+}
+ul{
+    padding:10px;
+}
+ul li{
+    list-style:none;
+}
+p{
+    font-size:20px;
+    color:red;
+}

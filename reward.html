@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="./answer/answer.css">-->
+    <link rel="stylesheet" href="./reset.css">
+    <script language="JavaScript"> if (document.all) { window.resizeTo(screen.availWidth,screen.availHeight); } </script>
+    <script type="text/javascript">        !function(a){function b(){var b=a.document,c=b.documentElement,d=c.getBoundingClientRect().width;document.documentElement.style.fontSize=20*(d/375)+"px"}window.addEventListener("DOMContentLoaded",function(){b()},!1),window.addEventListener("resize",function(){b()}),b()}(window);    </script>    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"></head>
+<style>
+    body,html{
+        width: 100%;
+        height: 100%;
+        font-size:20px;
+    }
+    .answer_logo{
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top:0.75rem;
+        right:0.775rem;
+    }
+    .button_1{
+        background: url('./answer/images/button_1.png') center;
+        margin-right:0.75rem;
+    }
+    .button_2{
+        background: url('./answer/images/button_2.png') center;    }
+    .true_answer_bg{
+        width: 100%;
+        height: 100%;
+        background: url('./answer/images/answer_3.jpg') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+    }
+    .true_answer{
+        width: 13.6rem;
+        position: absolute;
+        left:1.276rem;
+        top:8.6rem;
+        padding:1.4rem 1.3rem 1.6rem 1.3rem;
+        /*background-color: #fff;*/
+        /*border:1px solid #000;*/
+    }
+    .true_answer>span{
+        display: inline-block;
+        font-size:1rem;
+        font-weight:bold;
+    }
+    .true_title{
+        width: 100%;
+        font-size:0.675rem;
+        font-weight:bold;
+        margin-bottom:1.075rem;
+        margin-top:1.45rem;
+        line-height:0.9rem;
+    }
+    .award{
+        position: absolute;
+        top:14rem;
+        left:0rem;
+        width: 9.55rem;
+        height: 3.275rem;
+        line-height:2.8rem;
+        margin-top:2.125rem;
+        margin-left:3.4rem;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight:bold;
+        text-align: center;
+    }
+    .award1{
+        position: absolute;
+        top:14rem;
+        left:0rem;
+        width: 9.55rem;
+        height: 3.275rem;
+        line-height:2.8rem;
+        margin-top:2.125rem;
+        margin-left:3.4rem;
+        background: url('./answer/images/button_1.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight:bold;
+        text-align: center;
+    }
+    .true_board{
+        width: 12.5rem;
+        height: 4.475rem;
+        position: relative;
+        position: absolute;
+        top:12.925rem;
+        left:2.25rem;
+        padding-left:0.825rem;
+        padding-top:1.475rem;
+        padding-right:0.9rem;
+        padding-bottom: 1.325rem;
+        background: url('./answer/images/board.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        z-index:1;
+    }
+    .true_board>div{
+        width: 5.075rem;
+        height: 1.75rem;
+        display: inline-block;
+        line-height:1.8rem;
+        margin-top:1.325rem;
+        /*margin-bottom:1.325rem;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        text-align: center;
+    }
+    .true_board>span{
+        font-size:0.825rem;
+        text-align: left;
+    }
+    .true_man{
+        width: 3.5rem;
+        position: absolute;
+        top:-3.8rem;
+        left:5.3rem;
+        z-index:-1;
+    }
+    .true_bg{
+        background-color: rgba(0,0,0,0.7);
+    }
+    /*popup2017.9.11*/
+    .answer_bar .right{
+        display:inline-block;
+        width: 1.35rem;
+        height: 2rem;
+        position: absolute;
+        right: 0.3rem;
+        top:-0.8rem;
+    }
+    .answer_bar input{
+        margin:0.3rem;
+    }
+    #results{
+        width: 16.9rem;
+        position: absolute;
+        left: 0rem;
+        top: 2rem;
+        font-size:1rem;
+        color: #fff;
+        text-shadow: 0 0 10px #000;
+        font-weight: bold;
+        line-height: 1.8rem;
+    }
+    .popup{
+        background: rgba(0,0,0,.66);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    .popup-container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left:-7.11rem;
+        margin-top: -3.63rem;
+        width: 12.5rem;
+        height: 5.475rem;
+        padding-left:0.825rem;
+        padding-top:1.475rem;
+        padding-right:0.9rem;
+        padding-bottom: 1.325rem;
+        background: url('./answer/images/board.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+    }
+    .popup_button>div{
+        width: 5.075rem;
+        height: 1.75rem;
+        display: inline-block;
+        line-height:1.8rem;
+        margin-top:1.325rem;
+        /*margin-bottom:1.325rem;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        text-align: center;
+    }
+    .popup-container .button_1{
+        margin-left:0.5rem;
+    }
+    .popup-container>span{
+        font-size:0.825rem;
+        text-align: left;
+    }
+    .true_man{
+        width: 3.5rem;
+        position: absolute;
+        top:-3.8rem;
+        left:5.3rem;
+        z-index:-1;
+    }
+    .interactive{
+        opacity: 0.5;
+    }
+</style>
+</head>
+<body>
+<div class="true_answer_bg"  id="app">
+    <img src="./answer/images/answer_logo.png" alt="" class="answer_logo">
+    <div class="true_answer">
+        <p id="results">
+            您已注册成为康明斯会员，现在去领取属于您的“会员”礼品吧。
+            请您在现场获得礼品后，在工作人员的配合下再点击领取奖励按钮。
+        </p>
+        <div class="button_2 award" @click="submit1(4)" v-if="next!=6" :class="{interactive:animate==8}">领取奖励</div>
+        <div class="button_2 award1" v-if="next==6">已领取</div>
+    </div>
+    <!--模态框start-->
+    <div class="popup" v-show="prize">
+        <div class="popup-container">
+            <img src="./answer/images/answer_2.png" alt="" class="true_man">
+            <!--<img src="__PUBLIC__/answer/images/answer_2.png" alt="" class="true_man">-->
+            <span>您拿到礼品了么，一定在拿到之后再点击我哦！</span>
+            <div class="popup_button">
+                <div class="button_1" @click="cancle(5)" :class="{interactive:animate==11}">取消</div>
+                <div class="button_2" @click="sure(6)" :class="{interactive:animate==12}">确定</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/vue-resource.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/common.js"></script>
+<script>
+var vm = new Vue({
+    el: '#app',
+    data(){
+        return {
+            animate: '',
+            next: '',
+            prize:false,
+            openid:''
+        }
+    },
+    created(){
+        // 获取openid
+        var that=this;
+        var url=window.common.GetRequest(window.location.search)
+        var openid=url.openid
+        window.http.post('index/index/answer_confirm',{
+            openid:openid
+        },function(res){
+            console.log(res)
+            if(res.body.answer==1){
+                that.next=6;
+                window.common.setStorage('next',this.next);
+                that.prize=false;
+                window.common.setStorage('prize',this.prize);
+            }else if(res.body.answer==0){
+                that.next=0;
+            }
+        })
+    },
+    methods: {
+        submit1(){
+            // 按钮交互
+            var that = this;
+            that.prize=true;
+            that.animate = 8;
+            setTimeout(function () {
+                that.animate = '';
+
+            }, 100)
+            window.common.setStorage('prize', this.prize);
+            console.log('aaaa');
+        },
+        sure(){
+            var that = this;
+            that.animate = 12;
+            setTimeout(function () {
+                that.animate = '';
+                that.next = 6;
+                that.prize=false;
+            }, 100)
+            window.common.setStorage('next', this.next);
+            var url=window.common.GetRequest(window.location.search);
+            var openid=url.openid;
+            window.http.post('index/index/answer_getdraw',{
+                openid:openid
+            },function(res){
+                console.log(res)
+            })
+        },
+        cancle(){
+            var that = this;
+            that.animate = 11;
+            setTimeout(function () {
+                that.animate = '';
+                that.prize=false;
+            }, 100)
+        }
+    }
+})
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        height: 100%;
+    }
+    .cantain{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        width: 800px;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .cantain button{
+        border:none;
+        outline:none;
+        color:#fff;
+    }
+    .cantain button:first-child{
+        width: 226px;
+        height: 40px;
+        float: left;
+        background-color: red;
+    }
+    .cantain button:nth-child(2){
+        width: 226px;
+        height: 40px;
+        float: left;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .cantain button:last-child{
+        width: 226px;
+        height: 40px;
+        float: right;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="cantain" id="app">
+        <button @click="ready()">准备</button>
+        <button @click="start()">游戏开始</button>
+        <button @click="end()">游戏结束</button>
+    </div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/vue-resource.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    var vm = new Vue({
+                el: '#app',
+                data() {
+                    return{}
+                },
+                created(){
+
+                },
+                methods:{
+                    start(){
+                        window.http.post('/index/index/gameControll',{
+                            status:9
+                        },function(res){
+                            console.log(res)
+                        })
+                    },
+                    end(){
+                        window.http.post('/index/index/gameControll',{
+                            status:0
+                        },function(res){
+                            console.log(res)
+                        })
+                    },
+                    ready(){
+                        window.http.post('/index/index/gameControll',{
+                            status:5
+                        },function(res){
+                            console.log(res)
+                        })
+                    }
+                }
+
+            })
+</script>
+</html>

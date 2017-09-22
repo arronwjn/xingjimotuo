@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./answer.css">
+    <link rel="stylesheet" href="../reset.css">
+    <script language="JavaScript"> if (document.all) { window.resizeTo(screen.availWidth,screen.availHeight); } </script>
+    <script type="text/javascript">
+        !function(a){function b(){var b=a.document,c=b.documentElement,d=c.getBoundingClientRect().width;document.documentElement.style.fontSize=20*(d/375)+"px"}window.addEventListener("DOMContentLoaded",function(){b()},!1),window.addEventListener("resize",function(){b()}),b()}(window);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+    body,html{
+        width: 100%;
+        height: 100%;
+        font-size:20px;
+    }
+    .cantain{
+        width: 100%;
+        height: 100%;
+        background: url('./images/answer_3.jpg') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        position: relative;
+    }
+    .answer_logo{
+        width: 2.725rem;
+        height: 2.725rem;
+        position: absolute;
+        top:1rem;
+        right:0.75rem;
+    }
+    .board{
+        width: 14.05rem;
+        height: 7.275rem;
+        background: url('./images/board.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        position: relative;
+        position: absolute;
+        left:2.35rem;
+        top:6.85rem;
+    }
+    .answer_num{
+        width: 3.175rem;
+        height: 1.175rem;
+        line-height:1.175rem;
+        background: url('./images/answer_num.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        position: absolute;
+        top:-0.375rem;
+        left:5.325rem;
+        font-size:0.725rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .select{
+        position: absolute;
+        top:1.55rem;
+        left:1.225rem;
+        font-size: 0.75rem;
+        font-weight:bold;
+    }
+    .answer{
+        width: 13.8rem;
+        position: absolute;
+        top:15.325rem;
+        left:2.55rem;
+    }
+    .answer_bar{
+    	padding-left:0.5rem;
+        /*width: 13.85em;*/
+        height: 1.9rem;
+        line-height:1.5rem;
+        background: url('./images/select_bar.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        margin-bottom:1.1rem;
+        position: relative;
+    }
+    .answer_bar:last-child{
+        margin-bottom:0;
+    }
+    .answer_button{
+        width: 13.85rem;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top:26.325rem;
+        left:2.55rem;
+        font-size:0;
+    }
+    .answer_button>div {
+        width: 6.55rem;
+        height: 2.275rem;
+        line-height:1.8rem;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        display: inline-block;
+        font-size: 0.65rem;
+        font-weight:bold;
+        text-align: center;
+    }
+    .button_1{
+        background: url('./images/button_1.png') center;
+        margin-right:0.75rem;
+      }
+    .button_2{
+        background: url('./images/button_2.png') center;
+    }
+    .true_answer_bg{
+        width: 100%;
+        height: 175%;
+        background: url('./images/true_answer.jpg') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+    }
+    .true_answer{
+        width: 13.6rem;
+        position: absolute;
+        left:1.276rem;
+        top:8.6rem;
+        padding:1.4rem 1.3rem 1.6rem 1.3rem;
+        background-color: #fff;
+        border:1px solid #000;
+    }
+    .true_answer>span{
+        display: inline-block;
+        font-size:1rem;
+        font-weight:bold;
+
+    }
+    .true_title{
+        width: 100%;
+        font-size:0.675rem;
+        font-weight:bold;
+        margin-bottom:1.075rem;
+        margin-top:1.45rem;
+    }
+    .award{
+        width: 6.55rem;
+        height: 2.275rem;
+        line-height:1.8rem;
+        margin-top:2.125rem;
+        margin-left:3.4rem;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        display: inline-block;
+        font-size: 0.65rem;
+        font-weight:bold;
+        text-align: center;
+    }
+    .award1{
+        width: 6.55rem;
+        height: 2.275rem;
+        line-height:1.8rem;
+        margin-top:2.125rem;
+        margin-left:3.4rem;
+        background: url('./images/button_1.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        display: inline-block;
+        font-size: 0.65rem;
+        font-weight:bold;
+        text-align: center;
+    }
+    .true_board{
+        width: 12.5rem;
+        height: 4.475rem;
+        position: relative;
+        position: absolute;
+        top:12.925rem;
+        left:2.25rem;
+        padding-left:0.825rem;
+        padding-top:1.475rem;
+        padding-right:0.9rem;
+        padding-bottom: 1.325rem;
+        background: url('./images/board.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        z-index:1;
+    }
+    .true_board>div{
+        width: 5.075rem;
+        height: 1.75rem;
+        display: inline-block;
+        line-height:1.8rem;
+        margin-top:1.325rem;
+        /*margin-bottom:1.325rem;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        text-align: center;
+    }
+    .true_board>span{
+        font-size:0.825rem;
+        text-align: left;
+    }
+    .true_man{
+        width: 3.5rem;
+        position: absolute;
+        top:-4.85rem;
+        left:5.3rem;
+        z-index:-1;
+    }
+    .true_bg{
+        background-color: rgba(0,0,0,0.7);
+    }
+    /*popup2017.9.11*/
+   .answer_bar .right{
+   	    display:inline-block;
+   	    width: 1.35rem;
+   	    height: 2rem;
+   		position: absolute;
+   		right: 0.3rem;
+   		top:-0.8rem;
+   }
+   #results{
+   		width: 16.9rem;
+	    position: absolute;
+	    left: 1.276rem;
+    	top: 5rem;
+	    font-size:1rem;
+	    color: #000000;
+	    font-weight: bold;
+	    line-height: 1.2rem;
+   }
+   .popup{
+    	background: rgba(0,0,0,.66);
+    	height: 100%;
+    	width: 100%;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	z-index: 9999;
+   }
+   .popup-container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left:-7.11rem;
+        margin-top: -3.63rem;
+        width: 12.5rem;
+        height: 5.475rem;
+        padding-left:0.825rem;
+        padding-top:1.475rem;
+        padding-right:0.9rem;
+        padding-bottom: 1.325rem;
+        background: url('./images/board.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+   }
+   .popup-container>div{
+        width: 5.075rem;
+        height: 1.75rem;
+        display: inline-block;
+        line-height:1.8rem;
+        margin-top:1.325rem;
+        /*margin-bottom:1.325rem;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        text-align: center;
+    }
+    .popup-container .button_1{
+    	margin-left:0.5rem;
+    }
+    .popup-container>span{
+        font-size:0.825rem;
+        text-align: left;
+    }
+    .true_man{
+        width: 3.5rem;
+        position: absolute;
+        top:-4.85rem;
+        left:5.3rem;
+        z-index:-1;
+    }
+    /*答题准备页样式*/
+    html,body {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+    .cantainer{
+        width: 100%;
+        height: 100%;
+        background: url('./images/answer_bg.jpg') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        position: relative;
+    }
+    .answer_logo{
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top:0.75rem;
+        right:0.775rem;
+    }
+    .answer_start{
+        width: 3.775rem;
+        height: 3.775rem;
+        position: absolute;
+        bottom:1.825rem;
+        left:7.525rem;
+    }
+    .answer_1{
+        width: 3.125em;
+        height: 2.025rem;
+        position: absolute;
+        left:1.8rem;
+        bottom:14.35rem;
+    }
+    .answer_2{
+        width: 4.7rem;
+        height: 7.4rem;
+        position: absolute;
+        left:7.2rem;
+        bottom:14.225rem;
+    }
+    .answer_text{
+        width: 15.125rem;
+        height: 6.275rem;
+        position: relative;
+        position: absolute;
+
+        bottom:7.65rem;
+        left:1.8rem;
+        background: url('./images/answer_text.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+    }
+    .answer_wrap{
+        position: absolute;
+        top: 0.8rem;
+        left:1.975rem;
+    }
+    .answer_text p{
+        width: 11.625rem;
+        line-height:0.8rem;
+        font-size:0.4rem;
+        color:#fff;
+        text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+    }
+    .interactive{
+        /*-webkit-animation: myfirst 0.5s; !* Safari 与 Chrome *!*/
+        opacity: 0.5;
+    }
+    .page{
+        transition: all 0.1s linear;
+        transform: translate3d(0,0,0);
+    }
+    .move-enter-active{
+        transform: translate3d(100%,0,0);
+    }
+    .move-leave-active{
+        transform: translate3d(100%,0,0);
+    }
+    .answer_bg{
+        width: 18rem;
+        height: 18rem;
+        position: absolute;
+        top:14rem;
+        left:0.4rem;
+        background: url('./images/answer_bg1.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+</style>
+<body>
+    <div class="cantain" id="app">
+        <div class="answer_logo"></div>
+        <!--<img src="./images/answer_logo.png" alt="" >-->
+        <div v-if="next==0" class="cantainer">
+            <img src="./images/answer_logo.png" alt="" class="answer_logo">
+            <img src="./images/answer.png" alt="" class="answer_start" id="answer_start" @click="answerStart()" :class="{interactive:animate==1}">
+            <img src="./images/answer_1.png" alt="" class="answer_1">
+            <img src="./images/answer_2.png" alt="" class="answer_2">
+            <div class="answer_text">
+                <div class="answer_wrap">
+                    <p>1.玩家每道题目均可选择一个答案。</p>
+                    <p>2.答题结束并提交后，系统将展示正确答案，以及
+                        玩家答对题目数量。</p>
+                    <p>3.参与此活动的玩家，均可获得康明斯为您提供的
+                        纪念奖品一份，数量有限、送完即止。</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/answer_logo.png" alt="" class="answer_logo">
+        <transition name="move">
+            <div v-if="next==1" class="page">
+                <div class="answer_bg"></div>
+                <!--<img src="./images/answer_bg1.png" alt="" class="answer_bg">-->
+                <div class="board">
+                    <span class="select">请问康明斯是哪个国家的？</span>
+                    <div class="answer_num">第一题</div>
+                </div>
+                <div class="answer">
+                    <div class="answer_bar">
+                        <input type="radio" id="a1" name="A1" v-model="oa1" value="美国"/>A美国
+                    </div>
+                    <div class="answer_bar">
+                        <input type="radio" id="b1" name="A1" v-model="oa1" value="英国"/>B英国
+                    </div>
+                    <div class="answer_bar">
+                        <input type="radio" id="c1" name="A1" v-model="oa1" value="中国"/>C中国
+                    </div>
+                </div>
+                <div class="answer_button">
+                    <div class="button_1" @click="answer_back()">返回</div>
+                    <div class="button_2" @click="nextChoice(1)">下一题</div>
+                </div>
+            </div>
+        </transition>
+        <div v-if="next==2">
+            <div class="board">
+                <span class="select">请问康明斯的主管业务是什么？</span>
+                <div class="answer_num">第二题</div>
+            </div>
+            <div class="answer">
+                <div class="answer_bar">
+                    <input type="radio" id="a1" name="B1" v-model="oa2" value="公路用发动机"/>A公路用发动机
+                </div>
+                <div class="answer_bar">
+                    <input type="radio" id="b1" name="B1" v-model="oa2" value="洗车"/>B洗车
+                </div>
+                <div class="answer_bar">
+                    <input type="radio" id="c1" name="B1" v-model="oa2" value="汽车维修"/>C汽车维修
+                </div>
+            </div>
+            <div class="answer_button">
+                <div class="button_1" @click="nextChoice1(1)">上一题</div>
+                <div class="button_2" @click="nextChoice(2)">下一题</div>
+            </div>
+        </div>
+        <div v-if="next==3">
+            <div class="board">
+                <span class="select">请问康明斯发动机产品的颜色是什么？</span>
+                <div class="answer_num">第三题</div>
+            </div>
+            <div class="answer">
+                <div class="answer_bar">
+                    <input type="radio" id="a1" name="C1" v-model="oa3" value="红色"/>A红色
+                </div>
+                <div class="answer_bar">
+                    <input type="radio" id="b1" name="C1" v-model="oa3" value="蓝色"/>B蓝色
+                </div>
+                <div class="answer_bar">
+                    <input type="radio" id="c1" name="C1" v-model="oa3" value="黄色"/>C黄色
+                </div>
+            </div>
+            <div class="answer_button">
+                <div class="button_1" @click="nextChoice1()">上一题</div>
+                <div class="button_2" @click="submit(3)">提交答案</div>
+            </div>
+        </div>
+        <p id="results" v-if="results">{{results_name}}</p>
+        <div class="true_answer_bg" v-if="next>3">
+            <div class="true_answer" v-if="next>3">
+                <span>正确答案：</span>
+                <div class="true_title">1.请问康明斯是哪个国家的？</div>
+                <div class="answer_bar">
+                	<img class="right" src="images/right.png" />
+                    A美国
+                </div>
+                <div class="answer_bar">
+                    B英国
+                </div>
+                <div class="answer_bar">
+                   C中国
+                </div>
+                <div>您的答案：{{this.oa1}}</div>
+
+                <div class="true_title">2.请问康明斯的主管业务是什么？</div>
+                <div class="answer_bar">
+                	<img class="right" src="images/right.png" />
+                    A公路用发动机
+                </div>
+                <div class="answer_bar">
+                    B洗车
+                </div>
+                <div class="answer_bar">
+                    C汽车维修
+                </div>
+                <div>您的答案：{{this.oa2}}</div>
+                <div class="true_title">3.请问康明斯发动机产品的颜色是什么？</div>
+                <div class="answer_bar">
+                	<img class="right" src="images/right.png" />
+                    A红色
+                </div>
+                <div class="answer_bar">
+                    B蓝色
+                </div>
+                <div class="answer_bar">
+                    C黄色
+                </div>
+                <div>您的答案：{{this.oa3}}</div>
+                <div class="button_2 award" @click="submit1(4)" v-if="next!=6">领取奖励</div>
+                <div class="button_2 award1" v-if="next==6">已领取</div>
+            </div>
+        </div>
+        <!--模态框start-->
+        <div class="popup" v-if="popup">
+        	<div class="popup-container">
+        		<img src="./images/answer_2.png" alt="" class="true_man">
+        		<img src="./images/answer_2.png" alt="" class="true_man">
+	            <span>提交答题即可领取精美纪念礼品，数量有限，送完即止。</span>
+            	<div class="button_1" @click="cancle(6)">取消</div>
+            	<div class="button_2" @click="sure(1)">确定</div>
+        	</div>
+        </div>
+        <div class="popup" v-if="prize">
+        	<div class="popup-container">
+        		<img src="./images/answer_2.png" alt="" class="true_man">
+        		<img src="./images/answer_2.png" alt="" class="true_man">
+	            <span>请在工作人员的陪同下点击领取奖励按钮，否则无法领取您的奖品</span>
+            	<div class="button_1" @click="cancle(5)">取消</div>
+            	<div class="button_2" @click="sure(6)">确定</div>
+        	</div>
+        </div>
+        <!--<div class="true_board" v-if="prize">
+            <img src="./images/answer_2.png" alt="" class="true_man">
+            <span>请在工作人员的陪同下点击领取奖励按钮，否则无法领取您的奖品</span>
+            <div class="button_1" @click="cancle(5)">取消</div>
+            <div class="button_2">确定</div>
+        </div>
+        <div class="true_bg"></div>-->
+        <!--模态框end-->
+        <!--答题1-->
+        <!--<ul id="ul">-->
+            <!--<li  v-if="next==1">-->
+                <!--<table  id="table">-->
+                    <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                    <!--<td class="title">-->
+                    <!--第一题：发热管复核人顾客块人家鞥客人和公开别人额问问各位如果-->
+                    <!--</td>-->
+                    <!--<tr class="select">-->
+                    <!--<td>-->
+                    <!--<input type="radio" id="a1" name="a1" v-model="oa1" value="fsdfs"/>Afsdfs-->
+                    <!--</td>-->
+                    <!--<td>-->
+                    <!--<input type="radio" id="b1" name="a1" v-model="oa1" value="多少古代诗歌">B多少古代诗歌-->
+                    <!--</td>-->
+                    <!--<td>-->
+                    <!--<input type="radio" id="c1" name="a1" v-model="oa1" value="dsdwafqwcafc"/>Cdsdwafqwcafc-->
+                    <!--</td>-->
+                    <!--</tr>-->
+                <!--</table>-->
+            <!--</li>-->
+            <!--<li v-if="next==2">-->
+               <!--<table>-->
+                   <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                   <!--<td class="title">-->
+                       <!--第二题：范围和US温哥华we古湖基恩我估计文件-->
+                   <!--</td>-->
+                   <!--<tr class="select">-->
+                       <!--<td>-->
+                           <!--<input type="radio" id="a2" name="b2" v-model="oa2" value="fwefewfewf"/>Afwefewfewf-->
+                       <!--</td>-->
+                       <!--<td>-->
+                           <!--<input type="radio" id="b2" name="b2" v-model="oa2" value="发出去潍坊"/>B发出去潍坊-->
+                       <!--</td>-->
+                       <!--<td>-->
+                           <!--<input type="radio" id="c2" name="b2" v-model="oa2" value="风轻轻我父亲为父亲为"/>C风轻轻我父亲为父亲为-->
+                       <!--</td>-->
+                   <!--</tr>-->
+               <!--</table>-->
+            <!--</li>-->
+            <!--<li v-if="next==3" >-->
+                <!--<table>-->
+                    <!--<td class="title">-->
+                        <!--第三题：范围和US温哥华we古湖基恩我估计文件-->
+                    <!--</td>-->
+                    <!--<tr class="select">-->
+                        <!--<td>-->
+                            <!--<input type="radio" id="a3" name="c3" v-model="oc3" value="放弃而无法"/>A放弃而无法-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<input type="radio" id="b3" name="c3" v-model="oc3" value="去服务器为父亲"/>B去服务器为父亲-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<input type="radio" id="c3" name="c3" v-model="oc3" value="千分尺发四川 "/>C千分尺发四川-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                <!--</table>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <!--<p id="results" >-->
+
+        <!--</p>-->
+        <!--<div v-if="next>3">-->
+
+            <!--正确答案：-->
+            <!--<ul id="ul">-->
+                <!--<li >-->
+                    <!--<table  id="table">-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                        <!--<td class="title">-->
+                            <!--第一题：发热管复核人顾客块人家鞥客人和公开别人额问问各位如果-->
+                        <!--</td>-->
+                        <!--<tr class="select">-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="a1" name="a1"  value="fsafass" checked="checked"/>A-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="b1" name="a1">B-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="c1" name="a1"/>C-->
+                            <!--</td>-->
+
+                        <!--</tr>-->
+                    <!--</table>-->
+                    <!--您的答案：{{oa1}}-->
+                <!--</li>-->
+                <!--<li >-->
+                    <!--<table>-->
+                        <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                        <!--<td class="title">-->
+                            <!--第二题：范围和US温哥华we古湖基恩我估计文件-->
+                        <!--</td>-->
+                        <!--<tr class="select">-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="a2" name="b2" value="true" checked="checked"/>A-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="b2" name="b2"/>B-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="c2" name="b2" />C-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                    <!--您的答案：{{oa2}}-->
+                <!--</li>-->
+                <!--<li >-->
+                    <!--<table>-->
+                        <!--<td class="title">-->
+                            <!--第三题：范围和US温哥华we古湖基恩我估计文件-->
+                        <!--</td>-->
+                        <!--<tr class="select">-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="a3" name="c3"  value="true" checked="checked"/>A杀掉厕所发挥viws-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="b3" name="c3"/>B嘚瑟GV二个然后把-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<input type="radio" id="c3" name="c3" />C发vewgerger-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                    <!--您的答案：{{oc3}}-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="answer_bottom">-->
+            <!--<input id="btnNext" type="button" value="上一题" @click="nextChoice1()" class="submit1" v-if="next>=2 && next<=3">-->
+            <!--<input id="btnNext" type="button" value="下一题" @click="nextChoice()" class="submit2" v-if="next<=2">-->
+            <!--<button id="btnSubmit" type="button" value="提交"  @click="submit()" class="submit" v-if="next==3">提交</button>-->
+            <!--<button id="btnSubmit" type="button" value="提交"  @click="submit1()" class="prize" :class="{prize1:prize}" v-if="next>3">已领奖</button>-->
+        <!--</div>-->
+
+    </div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/common.js"></script>
+<script>
+var vm = new Vue({
+    el: '#app',
+    data() {
+        return {
+            next:0,
+            oa1:'',
+            oa2:'',
+            oa3:'',
+            btn:false,
+            popup:false,
+            results:false,
+            results_name:'',
+            prize:window.common.getStorage('prize'),
+            animate:''
+        };
+    },
+    created(){
+        console.log(window.common.getStorage('oa2'))
+//        window.common.setStorage('btn',this.btn)
+//        window.common.setStorage('next',this.next)
+//        this.btn=window.common.getStorage('btn')
+//        this.next=window.common.getStorage('next')
+//        console.log(window.common.getStorage('next'))
+        if(window.common.getStorage('next')){
+            this.next=window.common.getStorage('next')
+            window.common.setStorage('next',this.next)
+            if(window.common.getStorage('btn')){
+                this.btn=true
+                window.common.setStorage('btn',this.btn)
+                this.btn=window.common.getStorage('btn')
+                if(window.common.getStorage('oa1')){
+                    this.oa1=window.common.getStorage('oa1')
+                    if(window.common.getStorage('oa2')){
+                        this.oa2=window.common.getStorage('oa2')
+                        if(window.common.getStorage('oa3')){
+                            this.oa3=window.common.getStorage('oa3')
+                            if(window.common.getStorage('prize')){
+                                this.prize=window.common.getStorage('prize')
+                            }
+                            this.oc3=window.common.getStorage('oa3')
+                        }
+                    }
+                    this.oa1=window.common.getStorage('oa1')
+                }
+            }else{
+                this.btn=false
+            }
+        }else{
+            this.next=0
+        }
+    },
+    mounted(){
+    },
+    methods:{
+        nextChoice(e){
+            if(e==1){
+                if(this.oa1===''){
+                    alert('请选择第一题答案')
+                }else{
+                    this.next++;
+                }
+            }
+            if(e==2){
+                if(this.oa2===''){
+                    alert('请选择第二题答案')
+                }else{
+                    this.next++;
+                }
+            }
+
+        },
+        nextChoice1(){
+            this.next--;
+        },
+        sure(e){
+        	if(e==1){
+        		this.next = 4
+        		 window.common.setStorage('next',this.next);
+        		this.popup=false;
+        		this.results=true;
+        	}else if(e==6){
+                this.next=6;
+                window.common.setStorage('next',this.next);
+                this.prize=false;
+                window.common.setStorage('prize',this.prize);
+                console.log('bbb')
+            }
+
+        },
+        submit(e){
+            var t=0
+            if(e==3){
+                if(this.oa3===''){
+                    alert('请选择第三题答案')
+                }else{
+                    if (this.oa1==='美国'){
+                        t += 1;
+                        this.results_name = "您答对" + t + "题";
+                    }
+                    if (this.oa2==='公路用发动机'){
+                        t += 1;
+                        this.results_name = "您答对" + t + "题";
+                    }
+                    if (this.oa3==='红色'){
+                        t += 1;
+                        this.results_name = "您答对" + t + "题";
+                    }
+                    if(this.oa1==='美国' && this.oa2==='公路用发动机' && this.oa3==='红色'){
+                    	this.results_name = "恭喜您，答对全部题目，可前往礼品区领取康明斯为您提供的纪念奖品";
+                    }
+                    if(this.oa1 !='美国' && this.oa2 !='公路用发动机' && this.oa3 !='红色'){
+                    	this.results_name = "很遗憾，你一个也没有答对";
+                    }
+                    this.btn=true;
+                    this.popup=true;
+                    console.log(this.next,'aaa');
+                    window.common.setStorage('btn',this.btn);
+                    window.common.setStorage('oa1',this.oa1);
+                    window.common.setStorage('oa2',this.oa2);
+                    window.common.setStorage('oa3',this.oa3);
+                    console.log(this.oa3)
+                }
+            }
+
+         },
+        submit1(e){
+            if(e==4){
+                this.prize=true;
+                window.common.setStorage('prize',this.prize);
+                console.log('aaaa');
+            }
+
+        },
+        cancle(e){
+            if(e==5){
+                this.prize=false;
+                window.common.setStorage('prize',this.prize);
+            }else if(e==6){
+            	 this.popup=false;
+            }
+        },
+        answer_back(){
+//            window.location.href='./answer_start.html'
+        },
+        answerStart(){
+            var that=this;
+            that.animate=1;
+            setTimeout(function(){
+                that.animate='';
+                that.next=1;
+            },150)
+
+        }
+    }
+})
+</script>
+</html>

@@ -1,0 +1,106 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>奔跑吧康明斯</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <script language="JavaScript"> if (document.all) { window.resizeTo(screen.availWidth,screen.availHeight); } </script>
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            overflow: hidden;
+        }
+        canvas {
+            display:block;
+            position:absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+    
+    <script language="javascript" type="text/javascript"></script>
+</head>
+<body>
+<div style="position:relative;" id="gameDiv">
+
+        <audio src="./bg_music.mp3" controls="controls" loop="true" hidden="true" id="start" type="audio/mpeg"></audio>
+        <!--<audio src="music/end/Super.wav" controls="controls" loop="false" hidden="true" id="end"></audio>-->
+        <!--<audio autoplay src="" loop hidden="true"></audio>-->
+
+</div>
+<script src="./js/vue.js"></script>
+<script src="./js/vue-resource.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/common.js"></script>
+<script>var document_class = "Main";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+<script src="js/egret_require.js"></script>
+<script src="js/egret_loader.js"></script>
+<script src="js/game-min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+    var support = [].map && document.createElement("canvas").getContext;
+    if (support) {
+        egret_h5.startGame();
+    }
+    else {
+        alert("Egret 不支持您当前的浏览器")
+    }
+    function start(){
+        window.outerStart.call(window.gameObj);
+    }
+    function yaoyao() {
+        wx.config({
+            // 配置信息, 即使不正确也能使用 wx.ready
+            debug: false,
+            appId: '',
+            timestamp: 1,
+            nonceStr: '',
+            signature: '',
+            jsApiList: []
+        });
+        wx.ready(function() {
+            document.getElementById('start').play();
+        });
+    }
+    //加载页面获取用户信息
+    window.onload=function(){
+        yaoyao();
+        document.getElementById('start').play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            document.getElementById('start').play();
+        }, false);
+        window.http.post('index/index/addscore',{
+            userid:1,
+            score:0
+        },function(res){
+            console.log(res)
+        })
+        //游戏状态
+        setInterval(function(){
+            window.http.post('index/index/getstatus',{},function(res){
+                if(res.body.status==0){
+                    window.location.href='./gameOver.html'
+                }
+            })
+        },500)
+    }
+    var userId=window.common.getStorage('user_Id')
+    console.log(window.common.getStorage('user_Id'),'游戏界面')
+</script>
+</body>
+</html>

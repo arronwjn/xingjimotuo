@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>康明斯互动游戏</title>
+    <link rel="stylesheet" href="./reset.css">
+    <script language="JavaScript"> if (document.all) { window.resizeTo(screen.availWidth,screen.availHeight); } </script>
+    <script type="text/javascript">
+        !function(a){function b(){var b=a.document,c=b.documentElement,d=c.getBoundingClientRect().width;document.documentElement.style.fontSize=20*(d/375)+"px"}window.addEventListener("DOMContentLoaded",function(){b()},!1),window.addEventListener("resize",function(){b()}),b()}(window);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<style>
+    body,html{
+        width: 100%;
+        height: 100%;
+        font-size:20px;
+    }
+    .cantain{
+        width: 100%;
+        height: 100%;
+        background-color: #f9ba0f;
+    }
+    .popup{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    .popup-container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left:-7.11rem;
+        margin-top: -3.63rem;
+        width: 12.5rem;
+        height: 4.475rem;
+        padding-left:0.825rem;
+        padding-top:1.475rem;
+        padding-right:0.9rem;
+        padding-bottom: 1.325rem;
+        background: url('./images/board.png') center;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+    }
+    .popup-container>div{
+        width: 5.075rem;
+        height: 1.75rem;
+        display: inline-block;
+        line-height:1.8rem;
+        margin-top:1.325rem;
+        /*margin-bottom:1.325rem;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: cover;
+        text-align: center;
+    }
+    .popup-container .button_1{
+        margin-left:0.5rem;
+    }
+    .popup-container>span{
+        font-size:0.825rem;
+        text-align: left;
+    }
+    .true_man{
+        width: 3.5rem;
+        position: absolute;
+        top:-4.85rem;
+        left:5.3rem;
+        z-index:-1;
+    }
+    .answer_logo{
+        width: 2.45rem;
+        height:2.4rem;
+        position: absolute;
+        top:0.9rem;
+        right:0.75rem;
+    }
+</style>
+<body>
+    <div class="cantain" id="app">
+        <img src="./images/answer_logo.png" alt="" class="answer_logo">
+        <div class="popup" v-if="popup">
+            <div class="popup-container">
+                <img src="./images/answer_2.png" alt="" class="true_man">
+                <img src="./images/answer_2.png" alt="" class="true_man">
+                <span>游戏时间已到，请关注大屏幕查看您是否排在前10名呦~</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+
+            };
+        },
+        created(){
+//           setTimeout(function(){
+//               window.location.href='./start.html'
+//           },3000)
+        },
+        mounted(){
+        },
+        methods:{
+
+        }
+    })
+</script>
+</html>

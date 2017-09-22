@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="./reset.css">-->
+    <link rel="stylesheet" href="./shake.css">
+    <link rel="stylesheet" href="./semantic.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <script src="./js/common.js"></script>
+</head>
+<style>
+    /**{*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+    /*}*/
+    /*body,html{*/
+
+        /*width: 100%;*/
+        /*height: 100%;*/
+    /*}*/
+    /*.cantainer{*/
+        /*width: 100%;*/
+        /*height: 100%;*/
+    /*}*/
+    /*.cantainer>div{*/
+        /*padding:20px;*/
+    /*}*/
+    /*.order-bottom{*/
+
+        /*border:2px solid #000;*/
+        /*width: 100%;*/
+    /*}*/
+    /*tbody>tr{*/
+        /*height:52px;*/
+        /*line-height:52px;*/
+        /*border-bottom:2px solid #000;*/
+    /*}*/
+    /*tbody th{*/
+        /*border-left:2px solid #000;*/
+    /*}*/
+    /*tbody th p{*/
+        /*height:18px;*/
+        /*line-height:33px;*/
+    /*}*/
+    /*新加代码*/
+    body,td,th {
+        font-family: "微软雅黑", Arial, Helvetica,manteka;
+    }
+    @font-face {
+        font-family: 'manteka';
+        src: url('fonts/manteka.eot');
+        src: url('fonts/manteka.eot') format('embedded-opentype'),
+        url('fonts/manteka.woff2') format('woff2'),
+        url('fonts/manteka.woff') format('woff'),
+        url('fonts/manteka.ttf') format('truetype'),
+        url('fonts/manteka.svg#manteka') format('svg');
+    }
+    .special{
+        font-family: manteka;
+        font-weight:bold;
+    }
+    thead tr th p:first-child{
+        font-size:14px;
+    }
+    thead tr th p:last-child{
+        font-size:20px;
+    }
+    .headimg{
+        width: 50px;
+        height: 50px;
+        padding:2px;
+        margin-right: 22px;
+        margin-left: 50px;
+        float: left;
+        background-color: #fff;
+        border-radius:50%;
+        vertical-align: middle;
+        border:2px solid #000;
+    }
+    .nikename{
+        float: left;
+        line-height:58px;
+    }
+</style>
+<body style="background-color: rgb(226, 226, 226)">
+   <div class="cantainer" id="app">
+       <!--<div>-->
+           <!--<table class="order-bottom">-->
+               <!--<tbody>-->
+               <!--<tr class="title">-->
+                   <!--<th>-->
+                       <!--<p>RANKING</p>-->
+                       <!--<p>名次</p>-->
+                   <!--</th>-->
+                   <!--<th>-->
+                       <!--<p>NAME</p>-->
+                       <!--<p>微信昵称</p>-->
+                   <!--</th>-->
+                   <!--<th>-->
+                       <!--<p>KM</p>-->
+                       <!--<p>公里数</p>-->
+
+                   <!--</th>-->
+               <!--</tr>-->
+               <!--<tr class="title">-->
+                   <!--<th>1</th>-->
+                   <!--<th>-->
+                       <!--asfas-->
+                       <!--&lt;!&ndash;<img :src="" alt="">&ndash;&gt;-->
+                   <!--</th>-->
+                   <!--<th>90</th>-->
+               <!--</tr>-->
+               <!--</tbody>-->
+
+           <!--</table>-->
+       <!--</div>-->
+       <div id="final" class="ui page grid" style="display:block">
+           <div style="padding-top: 144px;padding-left: 30px;padding-right: 30px;padding-bottom: 30px;background-color: #e2e2e2;">
+               <table id="finaltable" class="ui celled table segment" style="background-color: #e2e2e2;border-radius: 0;">
+                   <thead >
+                       <tr>
+                           <th style="position: relative;width: 33.3%;border:3px solid black;font-family: manteka;">
+                               <p>RANKING</p><p>名次</p><!-- <img src="images/gai/ranking-logo.png" alt="" style="position: absolute;top: -73px;left: -33px;width: 50px;height: 50px;"> -->
+                           </th>
+                           <th style="position: relative;width: 33.3%;border:3px solid black;font-family: manteka;">
+                               <p>NAME</p><p>微信昵称</p><span style="position: absolute;top: -104px;left: 0;width: 500px;height: 60px;fontSize:40px;">奔跑吧，康明斯排名</span>
+                           </th>
+                           <th style="width: 33.3%;border:3px solid black;font-family: manteka;">
+                               <p>SCORE RANKING</p><p>分数排名</p>
+                           </th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                        <tr v-for="(item,index) in userList">
+                            <td style="border:3px solid black;font-family:manteka;font-size:25px;" class="special">{{index+1}}</td>
+                            <!--{{formatImg('http://asfsaf')}}-->
+                            <td class="tdleft" style="border:3px solid black;font-size:25px;"><div><img :src=formatImg(item.headimgurl) alt="" class="headimg"><span class="nikename">{{item.nickname}}</span></div></td>
+                            <td style="border:3px solid black;font-family:manteka;font-size:25px;" class="special">{{item.score}}</td>
+                        </tr>
+                        <!--<tr v-for="(item,index) in userList">-->
+                            <!--<td style="border:3px solid black;font-family:manteka;font-size:25px;" class="special">{{index+1}}</td>-->
+                            <!--<td class="tdleft" style="border:3px solid black;font-size:25px;"><div><img :src="item.headimgurl" alt="" class="headimg"><span class="nikename">{{item.nickname}}</span></div></td>-->
+                            <!--<td style="border:3px solid black;font-family:manteka;font-size:25px;" class="special">{{item.score}}</td>-->
+                        <!--</tr>-->
+                   </tbody>
+               </table>
+           </div>
+       </div>
+   </div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/vue-resource.js"></script>
+<script src="./js/api.js"></script>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                userList:[]
+            };
+        },
+        created(){
+            var that=this
+            window.http.post('index/index/getTimes',{},function(res){
+                console.log(res)
+                window.http.post('index/index/getTenScore',{
+                    times:res.body.times
+
+                },function(res){
+                    console.log(res)
+                    that.userList=res.body.scorelist
+                })
+            })
+//            var a=that.formatImg('http://afdrghdrh')
+//            console.log(a)
+        },
+        methods:{
+            formatImg(url){
+                var imgUrl=url
+                if (imgUrl.indexOf('http') !== -1) {
+                    imgUrl = imgUrl;
+                    console.log(imgUrl,'htttp')
+                }else{
+                    imgUrl = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505735883715&di=6867ad56220a03e64aa445f9e1f972d7&imgtype=0&src=http%3A%2F%2Fwww.th7.cn%2Fd%2Ffile%2Fp%2F2016%2F12%2F25%2F81f0dc4afee46afd2ae5e68b57f4b12b.jpg';
+                    console.log(imgUrl)
+                }
+                return imgUrl;
+                console.log(imgUrl,'图片路径转换')
+            }
+        },
+        computed:{
+
+        }
+
+    })
+</script>
+</html>

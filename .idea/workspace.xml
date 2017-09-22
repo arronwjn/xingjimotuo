@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81e52a51-385c-42e6-bbec-43e00579ab5d" name="Default" comment="" />
+    <ignored path="星际摩托.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="星际摩托" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="answer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/answer/answer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3975">
+              <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="end.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/end.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1505726150826" expanded="false" signature="5199:5257" placeholder="..." />
+                <marker date="1505726150826" expanded="false" signature="5353:5391" placeholder="..." />
+                <marker date="1505726150826" expanded="false" signature="5554:5612" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4850">
+              <caret line="194" column="16" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameOver.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameOver.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding>
+                <marker date="1505209376072" expanded="true" signature="2962:3031" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>answer_logo</find>
+      <find>prize</find>
+      <find>btn</find>
+      <find>submit</find>
+      <find>award</find>
+      <find>button_2</find>
+      <find>button_1</find>
+      <find>sure</find>
+      <find>top-grass</find>
+      <find>submit1</find>
+      <find>.top-grass</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/4C911682_edit.tmp/start.html" />
+        <option value="$PROJECT_DIR$/js/game-min.js" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/CA774675_edit.tmp/common.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/CA774675_edit.tmp/game-min.js" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A948A772_edit.tmp/Index.php" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/start.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/index.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/answer.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/gamecon.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/gameOver.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/DC691644_edit.tmp/gameover.html" />
+        <option value="$PROJECT_DIR$/start.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/DC691644_edit.tmp/start.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/DC691644_edit.tmp/gamecon.html" />
+        <option value="$PROJECT_DIR$/gameOver.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/C2338CB8_edit.tmp/shake.css" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/end.html" />
+        <option value="$PROJECT_DIR$/answer/answer.html" />
+        <option value="$PROJECT_DIR$/process.html" />
+        <option value="$PROJECT_DIR$/shake.css" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/gameover.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/process.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F8E102BB_edit.tmp/Index.php" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/861549E5_edit.tmp/game-min.js" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/answer.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/start.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/process.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/E9BD364F_edit.tmp/shake.css" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/answer.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/end.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/gameover.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/7C098F2D_edit.tmp/Index.php" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/fail.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/gameover.html" />
+        <option value="$PROJECT_DIR$/reward.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/659834F0_edit.tmp/shake.css" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/process.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/end.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/start.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/answer.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/reward.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/reward.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/index.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/gamecon.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/answer.html" />
+        <option value="$PROJECT_DIR$/end.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/end.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/process.html" />
+        <option value="C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/start.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xingjimotuo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xingjimotuo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xingjimotuo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\星际摩托\answer" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.end.html">
+    <configuration default="false" name="start.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/星际摩托/start.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="process.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/星际摩托/process.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="answer.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/星际摩托/answer/answer.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="reward.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/星际摩托/reward.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="end.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/星际摩托/end.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.start.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.process.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.answer.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.reward.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.end.html" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.end.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.process.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.reward.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.answer.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.start.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81e52a51-385c-42e6-bbec-43e00579ab5d" name="Default" comment="" />
+      <created>1504172872214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1504172872214</updated>
+      <workItem from="1504172873315" duration="1208000" />
+      <workItem from="1504227609715" duration="950000" />
+      <workItem from="1504229333494" duration="8104000" />
+      <workItem from="1504248760791" duration="987000" />
+      <workItem from="1504486358015" duration="1828000" />
+      <workItem from="1504488209425" duration="9504000" />
+      <workItem from="1504502719792" duration="11378000" />
+      <workItem from="1504572635137" duration="22184000" />
+      <workItem from="1504659041711" duration="39851000" />
+      <workItem from="1504745110487" duration="8271000" />
+      <workItem from="1504756971680" duration="20912000" />
+      <workItem from="1504762499301" duration="7878000" />
+      <workItem from="1504831578854" duration="5000" />
+      <workItem from="1504831601535" duration="28833000" />
+      <workItem from="1505091310315" duration="16821000" />
+      <workItem from="1505113329850" duration="9510000" />
+      <workItem from="1505101917863" duration="5641000" />
+      <workItem from="1505177081781" duration="76000" />
+      <workItem from="1505177169690" duration="31760000" />
+      <workItem from="1505264326221" duration="27092000" />
+      <workItem from="1505350287587" duration="14687000" />
+      <workItem from="1505437160287" duration="1790000" />
+      <workItem from="1505438962143" duration="31936000" />
+      <workItem from="1505696105785" duration="22790000" />
+      <workItem from="1506043695480" duration="1227000" />
+      <workItem from="1506049301498" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="325230000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1936" height="1056" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1406744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0097402595" sideWeight="0.5073762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.030270271" sideWeight="0.49578503" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.00972973" sideWeight="0.4926238" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0021645022" sideWeight="0.49683878" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A948A772_edit.tmp/Index.php" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/index.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/answer.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/gamecon.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/start.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/CA774675_edit.tmp/game-min.js" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/A6EDDEED_edit.tmp/gameOver.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/DC691644_edit.tmp/gamecon.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/DC691644_edit.tmp/start.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/DC691644_edit.tmp/gameover.html" />
+    <entry file="file://$PROJECT_DIR$/gameCon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/C2338CB8_edit.tmp/shake.css" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/end.html" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="99" column="14" selection-start-line="92" selection-start-column="7" selection-end-line="99" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/gameover.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/process.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F8E102BB_edit.tmp/Index.php" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/861549E5_edit.tmp/game-min.js" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/F7447B24_edit.tmp/answer.html" />
+    <entry file="file://$PROJECT_DIR$/shake.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="143" column="127" selection-start-line="143" selection-start-column="127" selection-end-line="143" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/process.html" />
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/E9BD364F_edit.tmp/shake.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="359" column="17" selection-start-line="359" selection-start-column="17" selection-end-line="359" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="242" column="11" selection-start-line="242" selection-start-column="11" selection-end-line="242" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/EA753F80_edit.tmp/gameover.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1324">
+          <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/7C098F2D_edit.tmp/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="199" column="30" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/fail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/gameover.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reward.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/659834F0_edit.tmp/shake.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23600">
+          <caret line="944" column="0" selection-start-line="944" selection-start-column="0" selection-end-line="944" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/process.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6950">
+          <caret line="278" column="69" selection-start-line="276" selection-start-column="12" selection-end-line="278" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3225">
+          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="131" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13150">
+          <caret line="526" column="38" selection-start-line="526" selection-start-column="38" selection-end-line="526" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/73ACF6B2_edit.tmp/reward.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="218" column="71" selection-start-line="218" selection-start-column="71" selection-end-line="218" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/4E898147_edit.tmp/shake.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameOver.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <marker date="1505209376072" expanded="true" signature="2962:3031" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/gameover.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3011">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="6" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/reward.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1048">
+          <caret line="248" column="11" selection-start-line="248" selection-start-column="11" selection-end-line="248" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/gamecon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="579" column="32" selection-start-line="579" selection-start-column="32" selection-end-line="579" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/answer/answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3975">
+          <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4850">
+          <caret line="194" column="16" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1114">
+          <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-826">
+          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/FlashFXP/Cache/~flashfxp/26A245F3_edit.tmp/process.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="235" column="90" selection-start-line="235" selection-start-column="90" selection-end-line="235" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1505726150826" expanded="false" signature="5199:5257" placeholder="..." />
+            <marker date="1505726150826" expanded="false" signature="5353:5391" placeholder="..." />
+            <marker date="1505726150826" expanded="false" signature="5554:5612" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
